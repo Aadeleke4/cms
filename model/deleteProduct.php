@@ -38,7 +38,7 @@ $img = $res['image'];
 
 $is_admin = $_SESSION['is_admin'];
 
-// Check if the user is an admin
+// Checks if the user is an admin
 if ($is_admin != 1) {
     // Check if the product belongs to the user
     if ($res['created_by'] != $_SESSION['userid']) {
