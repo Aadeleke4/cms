@@ -1,3 +1,4 @@
+<!-- Navigation -->
 <?php
     include('../controller/connection.php');
     $conn= connect();
