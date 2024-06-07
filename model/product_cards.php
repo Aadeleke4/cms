@@ -1,4 +1,5 @@
 <?php
+// Products cards
     $sql= "SELECT COUNT(*) as products FROM products";
     $total_products= mysqli_fetch_assoc($conn->query($sql));
 
