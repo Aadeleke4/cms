@@ -7,6 +7,7 @@
     $m='';
     $conn=connect();
 
+    // Added prepared statements to prevent SQL injection.
     if(isset($_POST['submit'])){
         $pName= $_POST['pname'];
         $buy= $_POST['buy'];
