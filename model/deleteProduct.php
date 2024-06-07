@@ -20,7 +20,7 @@ if (isset($_GET['id'])) {
     if ($ownershipResult) {
         $productOwnership = mysqli_fetch_assoc($ownershipResult)['created_by'];
 
-        // Allow deletion only if the user is the owner (normal user) or is an admin
+        // Allows deletion only if the user is the owner (normal user) or is an admin
         if ($_SESSION['is_admin'] == 1 || $productOwnership == $_SESSION['userid']) {
             $deleteQuery = "DELETE FROM products WHERE id = $id LIMIT 1";
             $conn->query($deleteQuery);
