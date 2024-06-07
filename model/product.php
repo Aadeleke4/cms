@@ -37,7 +37,7 @@
         FROM products 
         LEFT JOIN categories ON products.category_id = categories.category_id";
 $res = $conn->query($sql);
-
+// code handles searching for products based on a search term provided via a GET request
 if (isset($_GET['search'])) {
     $searchTerm = mysqli_real_escape_string($conn, $_GET['search']);
 
