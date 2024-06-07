@@ -15,7 +15,7 @@ if (isset($_GET['id'])) {
     $img = $res['image'];
 
     if (isset($_POST['deleteImage'])) {
-        // Delete the image file
+        // Deletes the image file
         if ($img !== null && file_exists($img)) {
             unlink($img);
         }
