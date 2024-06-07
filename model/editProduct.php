@@ -21,7 +21,7 @@
         $pName = $_POST['pname'];
         $buy = intval($_POST['buy']);
         $sell = intval($_POST['sell']);
-        $category_id = $_POST['category']; // Added category_id retrieval
+        $category_id = $_POST['category']; // Added for category_id retrieval
 
         if($buy >= $sell){
             if(isset($_POST['Submit'])){
