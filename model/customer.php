@@ -6,6 +6,7 @@
     include "navigation.php";
     $conn=connect();
 
+    // fetches data from customers
     $sql= "SELECT * from customers_info";
     $res= $conn->query($sql);
 ?>
