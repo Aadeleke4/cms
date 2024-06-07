@@ -8,6 +8,7 @@
     $conn = connect();
     
    // $sql= "SELECT * from products WHERE updated_at>'$date'";
+   // display products and populate dashboard with come product details
    $sql= "SELECT * from products";
     $prod= $conn->query($sql);
 ?>
