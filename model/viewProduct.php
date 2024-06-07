@@ -34,7 +34,7 @@ if (isset($_GET['id'])) {
         $newImgName = $newImg['name'];
         $newImgTempName = $newImg['tmp_name'];
 
-        // Specify the directory for storing uploaded images
+        // Specifies the directory for storing uploaded images
         $uploadDir = 'Uploads/';
         $newLocation = $uploadDir . $newImgName;
 
