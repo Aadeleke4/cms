@@ -6,7 +6,7 @@
     include "navigation.php";
     $conn=connect();
 
-    // Fetch categories
+    // Fetch categories for display
     $categorySql = "SELECT * FROM categories";
     $categoryRes = $conn->query($categorySql);
 
