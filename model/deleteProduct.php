@@ -13,7 +13,7 @@ if (isset($_GET['id'])) {
 } elseif (isset($_POST['Submit'])) {
     $id = $_POST['id'];
 
-    // Fetch product details to check ownership
+    // Fetches product details to check ownership
     $checkOwnershipQuery = "SELECT created_by FROM products WHERE id = $id LIMIT 1";
     $ownershipResult = $conn->query($checkOwnershipQuery);
 
